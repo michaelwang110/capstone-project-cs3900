@@ -1,0 +1,65 @@
+@import "Constants";
+
+#displayrsurvey-end-container {
+    &:extend(.default-container);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+	box-sizing: border-box;
+	height: 408px;
+    width: 480px;
+    position: absolute;
+    box-shadow: 1px 2px 13px 0 rgba(0,0,0,0.17);
+    border-radius: 9px;
+    background-color: white;
+    bottom: 5vh;
+    right: 5vw;
+    padding: 60px;
+    padding-bottom: 50px;
+
+    #displayrsurvey-logo {
+        width: 54px;
+        height: 54px;
+        border-radius: 54px;
+        align-self: center;
+    }
+    
+    #displayrsurvey-end-title {
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 28px;
+        text-align: center;
+        color: @dark-color;
+    }
+
+    #displayrsurvey-end-message {
+        font-weight: 500;
+        line-height: 20px;
+        text-align: center;
+        color: @dark-color;
+        margin-bottom: 62px;
+    }
+
+    #displayrsurvey-close-button {
+        &:extend(.default);
+        width: 95px;
+        height: 40px;
+        align-self: center;
+        background-color: @dark-color;
+        color: white;
+        border-radius: 2px;
+        border: none;
+        padding: 10px 30px;
+        -webkit-appearance: none;
+
+        &:hover {
+            background-color: darken(@dark-color, 10%);
+            cursor: pointer;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

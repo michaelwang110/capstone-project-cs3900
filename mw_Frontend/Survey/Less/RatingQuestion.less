@@ -1,0 +1,81 @@
+@import "Constants";
+
+#displayrsurvey-app-container {
+    
+    #displayrsurvey-survey-container {
+
+        #displayrsurvey-question-container {
+
+            #displayrsurvey-rating-response-container {
+                &:extend(.default-container);
+                display: flex;
+                flex-direction: column;
+                width: min-content;
+                max-width: 100%;
+                align-self: center;
+                height: @response-container-height;
+
+                #displayrsurvey-rating-tags-container {
+                    &:extend(.default-container);
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 18px;
+                    margin-top: 55px;
+
+                    .displayrsurvey-rating-tag {
+                        &:extend(.default);
+                        max-width: 5rem;
+                        color: @dark-color;
+                        cursor: default;
+                        font-size: 14px;
+                        font-weight: 550;
+                        margin: 0;
+                    }
+
+                    #displayrsurvey-max-tag {
+                        text-align: right;
+                    }
+                }
+
+                #displayrsurvey-rating-container {
+                    &:extend(.default-container);
+                    align-self: center;
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+
+                    .displayrsurvey-rating-option {
+                        &:extend(.default);
+                        height: 36px;
+                        width: 36px;
+                        border-radius: 36px;
+                        border: none;
+                        margin: 0px 4px;
+                        padding: 0;
+                        background-color: @option-color;
+                        color: @dark-color;
+                        font-size: 14px;
+                        font-weight: 550;
+                        line-height: 18px;
+                        -webkit-appearance: none;
+
+
+                        &:hover {
+                            background-color: @option-highlight;
+                            cursor: pointer;
+                        }
+                        
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    .displayrsurvey-finished {
+                        &:extend(.default);
+                        background-color: black !important;
+                    }
+                }
+            }
+        }
+    }
+}

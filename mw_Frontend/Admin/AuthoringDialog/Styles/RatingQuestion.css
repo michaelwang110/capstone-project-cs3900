@@ -1,0 +1,21 @@
+.rating-numbers {
+  display: flex;
+  flex-direction: column;
+}
+.rating-tag-container {
+  display: flex;
+  flex-direction: row;
+}
+.rating-params-bar {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 10px 0;
+}
+.rating-params-label {
+  margin-right: 10px;
+}
+.range-selector {
+  width: 40px;
+  margin-right: 10px;
+}

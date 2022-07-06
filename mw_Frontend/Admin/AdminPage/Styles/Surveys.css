@@ -1,0 +1,6 @@
+.export-button[disabled] {
+  background-color: grey;
+}
+.export-button[disabled]:hover {
+  cursor: context-menu;
+}
