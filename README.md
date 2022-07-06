@@ -1,10 +1,12 @@
-# AssemblyGang
-Private repository of COMP3900 team - Assembly Gang!
+# Book Recommendation Web Application
+COMP3900 Group Project
 
-Group Members:
+Implemented the Frontend and Backend for a Book Recommendation website similar to Goodreads.
 
-Farhan Ghazi (z5199861)
-Michael Papantoniou (z5164398)  
-Tim Huang (z5020441)
-Michael Wang (z5016071)
+Included features such as:
+- User Registration and Login
+- Book Search
+- Book Collections
+- Book Reviews and Ratings
 
+Received a HD score of 89 for this project.
